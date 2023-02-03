@@ -31,14 +31,26 @@
 					min-width: 100% !important;
 				}
 				p {
-					font-size: 20px !important;
+					font-size: 16px !important;
+				}
+				.o-line {
+					width: 50% !important;
+					text-align: center !important;
+				}
+				.shipping-txt {
+					font-size: 16px !important;
 				}
 				.footer p:last-of-type {
 					font-size: 12px !important;
 				}
 				.two-cols .col {
 					max-width: 100% !important;
-					padding: 40px !important;
+				}
+				.two-cols .col:first-of-type {
+					padding: 40px 40px !important;
+				}
+				.two-cols .col:last-of-type {
+					padding: 0px 40px 40px !important;
 				}
 			}
 		</style>
@@ -116,20 +128,27 @@
 									style="padding: 0; text-align: center"
 									width="100%"
 								>
-									<a
-										href="#"
-										style="
-											text-decoration: none;
-											font-family: 'Poppins', sans-serif;
-											padding: 0;
-											margin: 0;
-										"
-										><img
-											src="images/email-bg.png"
-											alt="New arrivals! Tees, tanks, and more. 2023 is here, so get all the styles you love."
-											width="100%"
-											style="border: 0"
-									/></a>
+									<table width="100%" style="border: 0">
+										<tr>
+											<td style="padding: 0">
+												<a
+													href="#"
+													style="
+														text-decoration: none;
+														font-family: 'Poppins',
+															sans-serif;
+														padding: 0;
+														margin: 0;
+													"
+													><img
+														src="images/email-bg.png"
+														alt="New arrivals! Tees, tanks, and more. 2023 is here, so get all the styles you love."
+														width="100%"
+														style="border: 0"
+												/></a>
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 							<!-- Content section -->
@@ -236,6 +255,7 @@
 							<!-- Page break line -->
 							<tr>
 								<td
+									class="o-line"
 									width="100%"
 									style="
 										padding: 0;
@@ -246,7 +266,7 @@
 									<img
 										src="images/pg-break-line.png"
 										alt="Orange page break line"
-										width="480"
+										width="100%"
 										style="border: 0"
 									/>
 								</td>
@@ -313,6 +333,7 @@
 							<tr>
 								<td style="padding: 0">
 									<p
+										class="shipping-txt"
 										style="
 											text-align: left;
 											font-family: inherit;
